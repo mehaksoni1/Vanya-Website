@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vanya Organics — Natural Skincare (Demo)</title>
+  <meta name="description" content="Vanya Organics — Natural, sustainable skincare made in India. Demo site for assignment.">
+  <style>
+    :root{--accent:#2f855a;--muted:#6b7280;--bg:#f7fafc;--card:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0f172a}
+    header{background:linear-gradient(90deg, #ffffff 0%, #f0fff4 100%); border-bottom:1px solid #e6edf0}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+    .brand{display:flex; gap:16px; align-items:center}
+    .logo{width:56px; height:56px; border-radius:10px; background:linear-gradient(135deg,#9ae6b4,#2f855a); display:flex; align-items:center; justify-content:center; color:white; font-weight:700}
+    nav{margin-left:auto}
+    nav a{margin-left:18px; text-decoration:none; color:var(--muted)}
+    .hero{display:flex; gap:32px; align-items:center; padding:48px 0}
+    .hero-left{flex:1}
+    .eyebrow{color:var(--accent); font-weight:600}
+    h1{font-size:34px; margin:12px 0}
+    p.lead{color:var(--muted); margin:0 0 20px}
+    .cta{display:inline-block; background:var(--accent); color:white; padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:600}
+    .features{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px}
+    .card{background:var(--card); padding:16px; border-radius:12px; box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .hero-right{flex:1}
+    .hero-right img{width:100%; border-radius:12px; display:block}
+    section{padding:40px 0}
+    .two-col{display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center}
+    footer{background:#0b1220; color:#cbd5e1; padding:28px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    form{display:grid; gap:12px}
+    input, textarea{padding:10px; border-radius:8px; border:1px solid #e6eef2}
+    button{padding:10px 14px; border-radius:8px; border:0; background:var(--accent); color:white; font-weight:600}
+
+    /* responsive */
+    @media (max-width:900px){
+      .features{grid-template-columns:repeat(2,1fr)}
+      .two-col{grid-template-columns:1fr}
+      nav{display:none}
+    }
+    @media (max-width:520px){
+      h1{font-size:26px}
+      .features{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; align-items:center">
+      <div class="brand">
+        <div class="logo">VO</div>
+        <div>
+          <div style="font-weight:700">Vanya Organics</div>
+          <div style="font-size:12px; color:var(--muted)">Natural Skincare — Made in India</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">Made in India · Sustainably Sourced</div>
+        <h1>Clean, plant-powered skincare crafted for Indian skin</h1>
+        <p class="lead">Vanya Organics blends traditional Ayurvedic botanicals with modern, clinically tested formulations. Gentle on skin, kind to the planet.</p>
+        <a class="cta" href="#products">Shop Bestsellers</a>
+
+        <div class="features" style="margin-top:22px">
+          <div class="card">
+            <strong>Free Shipping</strong>
+            <div style="color:var(--muted); font-size:13px">All orders above ₹999 across India</div>
+          </div>
+          <div class="card">
+            <strong>Clinically Tested</strong>
+            <div style="color:var(--muted); font-size:13px">Dermatologist-approved formulations</div>
+          </div>
+          <div class="card">
+            <strong>Sustainable Packaging</strong>
+            <div style="color:var(--muted); font-size:13px">Recyclable & minimal waste</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80" alt="Natural skincare"/>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="two-col">
+        <div>
+          <h2>About Vanya Organics</h2>
+          <p style="color:var(--muted)">Founded in 2022 in Jaipur, India, Vanya Organics is a homegrown brand focused on harnessing the potency of Indian botanicals — like turmeric, neem, and aloe — to create effective, gentle skincare. We partner with local farmers and use small-batch production to ensure quality and traceability.</p>
+          <ul style="color:var(--muted)">
+            <li>Manufacturing: Rajasthan (ISO-certified facility)</li>
+            <li>Shipping: Pan-India with express options to major cities</li>
+            <li>Support: Mon–Fri, 9am–6pm IST</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Our Popular Products</h3>
+          <ol style="margin:8px 0 0 18px; color:var(--muted)">
+            <li>Turmeric Radiance Face Wash</li>
+            <li>Aloe + Cucumber Hydrating Mist</li>
+            <li>Neem Clarifying Night Serum</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2>Featured Products</h2>
+      <div class="grid-3" style="margin-top:16px">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=70" alt="product1" style="width:100%; border-radius:8px; height:170px; object-fit:cover;">
+          <h4 style="margin:10px 0 6px">Turmeric Radiance Face Wash</h4>
+          <div style="color:var(--muted); font-size:14px">₹499 · 150ml</div>
+          <p style="color:var(--muted); font-size:13px">Gentle cleanse with turmeric and sandalwood for a natural glow.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=800&q=70" alt="product2" style="width:100%; border-radius:8px; height:170px; object-fit:cover;">
+          <h4 style="margin:10px 0 6px">Aloe + Cucumber Hydrating Mist</h4>
+          <div style="color:var(--muted); font-size:14px">₹349 · 120ml</div>
+          <p style="color:var(--muted); font-size:13px">Refresh and hydrate anytime, perfect for the Indian climate.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1592878849122-5e7f3f46bdb8?auto=format&fit=crop&w=800&q=70" alt="product3" style="width:100%; border-radius:8px; height:170px; object-fit:cover;">
+          <h4 style="margin:10px 0 6px">Neem Clarifying Night Serum</h4>
+          <div style="color:var(--muted); font-size:14px">₹799 · 30ml</div>
+          <p style="color:var(--muted); font-size:13px">Targets blemishes and balances oil with neem and tea tree.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="two-col">
+        <div>
+          <h2>Contact & Orders — India</h2>
+          <p style="color:var(--muted)">Head Office: Jaipur, Rajasthan, India<br>Phone: +91 98765 43210<br>Email: orders@vanyaorganics.in</p>
+
+          <h3>Store & Shipping Info</h3>
+          <p style="color:var(--muted)">Ships across India. COD available in select cities. Estimated delivery 3–7 business days depending on location.</p>
+        </div>
+        <div class="card">
+          <h3>Send us a message</h3>
+          <form onsubmit="alert('This is a demo — in a real site the form would submit to a server.'); return false;">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; gap:24px; align-items:flex-start">
+      <div style="flex:1">
+        <div style="font-weight:700; color:white">Vanya Organics</div>
+        <div style="margin-top:8px; color:#9aa7b2; font-size:13px">Natural skincare · Jaipur, India · © 2025 Vanya Organics (Demo)</div>
+      </div>
+      <div style="width:260px">
+        <div style="font-weight:700; color:white; margin-bottom:6px">Quick Links</div>
+        <div style="display:flex; gap:12px; color:#9aa7b2; font-size:14px">
+          <a href="#products" style="color:#9aa7b2; text-decoration:none">Products</a>
+          <a href="#about" style="color:#9aa7b2; text-decoration:none">About</a>
+          <a href="#contact" style="color:#9aa7b2; text-decoration:none">Contact</a>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:700; color:white; margin-bottom:6px">Follow Us</div>
+        <div style="color:#9aa7b2; font-size:13px">Instagram · Facebook · X</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
